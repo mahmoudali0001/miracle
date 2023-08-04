@@ -1,23 +1,30 @@
 import React from "react";
 
+import { BsSearch, BsCart3, BsPerson } from "react-icons/bs";
+
 import NavigationItems from "../NavigationItems/NavigationItems";
-// import Logo from "../../Logo/Logo";
-import Input from "../../SearchItem/SearchItem";
+import DrawerToggle from "../NavigationItems/SideDrawer/DrawerToggle/DrawerToggle";
+import Logo from "../../Logo/Logo";
 
 const Toolbar = (props) => {
   return (
-    <header className="flex items-center justify-between mx-2 border-b-2 border-t-2 mt-1">
-      <div>
-        <div>Logo</div>
+    <header className="flex items-center justify-between | lg:mx-3 md:mx-2 mx-1 | min-h-[48px]">
+      <DrawerToggle clicked={props.drawerToggleClicked} />
+
+      <div className="flex gap-x-3">
+        <Logo />
+
+        <nav className="md:inline-block hidden">
+          <NavigationItems />
+        </nav>
       </div>
 
-      <div>
-        <Input placeholder="Search" />
+      <div className="flex gap-x-5 justify-center items-center cursor-pointer">
+        <div className="md:inline-block hidden">Login</div>
+        <BsPerson className="md:hidden inline-block" />
+        <BsSearch />
+        <BsCart3 />
       </div>
-
-      <nav>
-        <NavigationItems />
-      </nav>
     </header>
   );
 };

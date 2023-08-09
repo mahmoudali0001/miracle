@@ -71,4 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 run `npm update` before you anything first, ok?
 
-here should be someother sentence for your knowledge....
+
+

@@ -4,7 +4,7 @@ import NavigationItem from "./NavigationItem/NavigationItem";
 
 const navigationItems = (props) => (
   <ul className="flex justify-between md:flex-row flex-col">
-    <NavigationItem path="/home" className="text-black font-bold">
+    <NavigationItem path="/" className="text-black font-bold">
       Home
     </NavigationItem>
     <NavigationItem path="/shap" className="text-gray-500">

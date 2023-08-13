@@ -7,8 +7,8 @@
     @apply w-8 h-px bg-emerald-950;
   }
 
-  .thridTxtClass {
-    @apply text-[#4343435e] text-4xl font-bold;
+  .spanTxtClass {
+    @apply text-[#4343435e] md:text-4xl text-2xl font-bold;
   }
 }
 

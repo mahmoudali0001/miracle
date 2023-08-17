@@ -5,8 +5,8 @@ import DescriptionCom from '../../DescriptionCom/DescriptionCom';
 import TextCom from '../../TextCom/TextCom';
 
 const headerCard = (props) => (
-  <div className='rounded-2xl mb-5 mx-5 relative bg-red-300'>
-    <div className='flex'>
+  <div>
+    <div className='flex rounded-2xl mb-5 mx-5 relative bg-white'>
       <TextCom
         txt3Color='thridTxtClass text-black text-8xl'
         className1='text-4xl font-semibold'

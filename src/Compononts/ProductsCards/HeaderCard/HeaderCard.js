@@ -5,8 +5,8 @@ import DescriptionCom from '../../DescriptionCom/DescriptionCom';
 import TextCom from '../../TextCom/TextCom';
 
 const headerCard = (props) => (
-  <div className='bg-gray-400 my-2 mx-2 rounded-2xl w-auto h-auto relative '>
-    <div className='flex rounded-2xl mb-5 mx-5 relative'>
+  <div className=' my-2 mx-2 rounded-2xl w-auto h-auto relative bg-gradient-to-r from-[#d9d9d9] to-[#eee] '>
+    <div className='flex rounded-2xl mb-5 mx-5 relative py-16 px-10'>
       <TextCom
         txt3Color='thridTxtClass text-black text-6xl w-full'
         className1='text-4xl font-semibold'
@@ -15,13 +15,10 @@ const headerCard = (props) => (
         secondLine='Wireless'
       />
     </div>
-    <div>
-      <ButtonCom extraClass='text-white bg-red-900  '>More..</ButtonCom>
-    </div>
-    <div className=' absolute top-[6rem] left-[38rem]'>
-      <ImageCom alt='Image' className='w-72 h-96 z-50 mb-[4px]  ' />
-    </div>
 
+    <ButtonCom extraClass='text-white bg-red-900  '>More..</ButtonCom>
+
+    <ImageCom />
     <div className='flex justify-end mt-1'>
       <ButtonCom extraClass='text-white'>show me</ButtonCom>
     </div>

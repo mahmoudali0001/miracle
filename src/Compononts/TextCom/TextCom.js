@@ -6,7 +6,7 @@ const textCom = (props) => {
   return (
     <div
       className={
-        'rounded-xl flex flex-col bg-gradient-to-r px-6 py-5 mr-2 mt-[100px] ml-[100px]'
+        'rounded-xl flex flex-col bg-gradient-to-r px-6 py-5 mr-2 mt-[100px] ml-[24px]'
       }>
       <span className={[firstLineClass, props.className1].join(' ')}>
         {props.firstLine ? props.firstLine : 'Enjoy'}
@@ -14,9 +14,9 @@ const textCom = (props) => {
       <span className={[secondLineClass, props.className2].join(' ')}>
         {props.secondLine ? props.secondLine : 'With'}
       </span>
-      <span className={props.txt3Color}>
-        {props.thirdLine ? props.thirdLine : 'EARPHONE'}
-      </span>
+      <div className='w-full  text-center text-[12rem] text-white text font-extrabold'>
+        <span className='w-fit'>HEADPHONE</span>
+      </div>
     </div>
   );
 };

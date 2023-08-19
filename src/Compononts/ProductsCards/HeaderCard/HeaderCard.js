@@ -1,29 +1,32 @@
 import React from 'react';
-import ImageCom from './ImageCom';
 import ButtonCom from '../../ButtonCom/ButtonCom';
 import DescriptionCom from '../../DescriptionCom/DescriptionCom';
 import TextCom from '../../TextCom/TextCom';
+import ImageCom from './ImageCom';
+import { BsSearch, BsCart3, BsPerson, BsQuestionCircle } from 'react-icons/bs';
 
 const headerCard = (props) => (
-  <div className=' my-2 mx-2 rounded-2xl w-auto h-auto relative bg-gradient-to-r from-[#d9d9d9] to-[#eee] '>
-    <div className='flex rounded-2xl mb-5 mx-5 relative py-16 px-10'>
+  <div className=' my-2 mx-2 rounded-2xl w-auto h-auto relative bg-gradient-to-r from-[#d9d9d9] to-[#eee]'>
+    <div className='flex flex-col rounded-2xl mb-5 mx-5 relative pt-52 pl-16'>
       <TextCom
-        txt3Color='thridTxtClass text-black text-6xl w-full'
         className1='text-4xl font-semibold'
         firstLine='Beats Solo'
         className2='text-8xl'
         secondLine='Wireless'
+        thirdLine='HEADPHONE'
       />
+      <ButtonCom extraClass='text-white bg-red-900 w-[150px] h-[40px] mt-4 '>
+        More..
+      </ButtonCom>
     </div>
-
-    <ButtonCom extraClass='text-white bg-red-900  '>More..</ButtonCom>
-
     <ImageCom />
-    <div className='flex justify-end mt-1'>
-      <ButtonCom extraClass='text-white'>show me</ButtonCom>
+    <div className='flex justify-end'>
+      <div className='bg-blue-900 w-fit rounded-full relative bottom-32'>
+        <BsQuestionCircle size={70} color='white' />
+      </div>
     </div>
+
     <DescriptionCom />
   </div>
 );
-
 export default headerCard;

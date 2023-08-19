@@ -3,7 +3,7 @@ import ButtonCom from '../../ButtonCom/ButtonCom';
 import DescriptionCom from '../../DescriptionCom/DescriptionCom';
 import TextCom from '../../TextCom/TextCom';
 import ImageCom from './ImageCom';
-import { BsSearch, BsCart3, BsPerson, BsQuestionCircle } from 'react-icons/bs';
+import { BsQuestionCircle } from 'react-icons/bs';
 
 const headerCard = (props) => (
   <div className=' my-2 mx-2 rounded-2xl w-auto h-auto relative bg-gradient-to-r from-[#d9d9d9] to-[#eee]'>

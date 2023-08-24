@@ -8,7 +8,7 @@
   }
 
   .spanTxtClass {
-    @apply text-[#4343435e] md:text-4xl text-2xl font-bold;
+    @apply text-[#4343435e] md:text-4xl sm:text-2xl text-lg font-bold;
   }
 
   .productsCard {

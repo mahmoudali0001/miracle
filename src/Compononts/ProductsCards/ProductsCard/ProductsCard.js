@@ -4,7 +4,7 @@ import watchImg from "../../../assests/Image/yellow_watch.png";
 const productsCard = (props) => (
   <div
     className={[
-      "rounded-xl flex items-end px-6 py-5 relative xl:h-48 md:h-44 sm:36",
+      "rounded-xl flex items-end sm:px-6 sm:py-5 py-3 px-3 relative xl:h-48 md:h-44 sm:36",
       props.styleClass,
     ].join(" ")}
   >
@@ -16,7 +16,7 @@ const productsCard = (props) => (
       </span>
     </div>
     <img
-      className="md:w-40 md:h-40 w-24 h-24 absolute right-6 top-5"
+      className="md:w-24 md:h-24 lg:w-36 lg:h-36 xl:w-40 xl:h-40 sm:w-24 sm:h-24 w-16 h-16 absolute md:right-1 lg:right-4 right-[2px] top-5"
       src={watchImg}
     />
   </div>

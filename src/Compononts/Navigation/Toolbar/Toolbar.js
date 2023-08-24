@@ -8,10 +8,10 @@ import Logo from "../../Logo/Logo";
 
 const Toolbar = (props) => {
   return (
-    <header className="flex items-center justify-between | lg:mx-3 md:mx-2 mx-1 | min-h-[48px]">
+    <header className="flex items-center justify-between | lg:mx-3 md:mx-2 mx-1 | min-h-[48px] box-border">
       <DrawerToggle clicked={props.drawerToggleClicked} />
 
-      <div className="flex gap-x-3">
+      <div className="flex ">
         <Logo />
 
         <nav className="md:inline-block hidden">

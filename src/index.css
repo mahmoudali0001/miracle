@@ -11,7 +11,7 @@
     @apply text-[#4343435e] md:text-4xl text-2xl font-bold;
   }
 
-  .kkkk {
+  .productsCard {
     @apply md:col-span-1 col-span-1 text-white;
   }
 }

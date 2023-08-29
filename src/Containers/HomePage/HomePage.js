@@ -1,10 +1,16 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import ProductsCards from "../../Compononts/ProductsCards/ProductsCards";
+import ProductsCards from '../../Compononts/ProductsCards/ProductsCards';
+import HeaderCardComponent from '../../Compononts/HeaderCard/HeaderCard';
 
 class HomePage extends Component {
   render() {
-    return <ProductsCards />;
+    return (
+      <div>
+        <HeaderCardComponent />
+        <ProductsCards />;
+      </div>
+    );
   }
 }
 

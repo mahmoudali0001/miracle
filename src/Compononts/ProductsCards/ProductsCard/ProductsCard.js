@@ -1,5 +1,6 @@
 import React from "react";
 import watchImg from "../../../assests/Image/yellow_watch.png";
+import Button from "../../UI/Button/Button";
 
 const productsCard = (props) => (
   <div
@@ -8,12 +9,13 @@ const productsCard = (props) => (
       props.styleClass,
     ].join(" ")}
   >
-    <div className="flex flex-col ">
+    <div className="flex flex-col">
       <span className="font-light md:text-base text-sm">Enjoy</span>
       <span className="font-bold md:text-2xl text-lg">With</span>
       <span className={["spanTxtClass", props.spanTxtClass].join(" ")}>
         EARPHONE
       </span>
+      <Button buttonClass={props.spicelBg}>More Info</Button>
     </div>
     <img
       className="md:w-24 md:h-24 lg:w-36 lg:h-36 xl:w-40 xl:h-40 sm:w-24 sm:h-24 w-16 h-16 absolute md:right-1 lg:right-4 right-[2px] top-5"
